@@ -1,0 +1,32 @@
+git init - инициализация git, добавляется скрытая папка
+git status - состояние проекта
+git add . - добавление всех файлов 
+git add <file> - добавление конкретного файла
+git log --oneline - отображение всех коммитов
+.gitignore - файл, который git будет игнорировать 
+
+# Не нужно писать длинный комментарий в commit
+
+git branch - отображение всех веток
+Для переключения между ветками лучше использовать лучше git switch 
+git merge <branch_name> - объединение веток 
+git branch -D <branch_name> - удаление ветки
+
+git commit -a - для всех отслеживаемых файлов будет сделан commit 
+
+git revert <хэш commit> - обратные действия конкретного commit 
+git reset --hard - возвращение к состоянию последнего созданного commit
+
+#git reset --soft - # 
+
+git reset --hard HEAD~k - возвращение на k commit'ов назад + удаление k последних commit'ов
+git reset --mixed HEAD~k - удаление commit'а, но с возможностью его восстановить после доработки
+
+git commit --amend - добавление изменений к последнему commit 
+
+git checkout <хэш commit> - перемещение по commit'ам. Но не забыть сделать ветку. 
+
+git tag -a v1.0.0 -m "REALISE 1.0.0" - теги для удобного переключения между версиями а
+
+git push --tags - добавление всех тегов в GitHub
+
